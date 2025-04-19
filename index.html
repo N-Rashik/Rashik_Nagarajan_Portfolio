@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .zoom-in {
+      animation: zoomIn 1s ease-out forwards;
+      transform: scale(0.9);
+      opacity: 0;
+    }
+
+    @keyframes zoomIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </style>
+</head>
+
+<!-- <body class="bg-gradient-to-br from-blue-800 via-indigo-800 to-cyan-500 text-white min-h-screen">  -->
+
+  <!-- Include model-viewer script -->
+<!-- Typing effect library -->
+<section class="flex flex-col md:flex-row items-center justify-center h-screen bg-gradient-to-r from-blue-100 via-white to-blue-100 text-center md:text-left px-4 md:px-20 gap-10 fade-in">
+
+  <!-- Text Section -->
+  <div class="relative z-10">
+    <h1 class="text-4xl md:text-6xl font-semibold mb-4 text-gray-900 opacity-0 animate__animated animate__fadeIn animate__delay-1s">
+      Hi, I'm <span class="text-yellow-400 animate-pulse">Rashik Nagarajan</span>
+    </h1>
+    <p class="text-xl md:text-2xl mb-6 text-indigo-800 font-medium opacity-0 animate__animated animate__fadeIn animate__delay-2s">
+      <span id="typed-text"></span>
+    </p>
+    <a href="docs\Rashik-Nagarajan-Resume.pdf"
+       class="bg-gradient-to-r from-yellow-300 to-yellow-500 text-indigo-900 px-6 py-3 rounded-full text-lg font-semibold shadow-md hover:scale-105 transition-all duration-300 hover:shadow-2xl opacity-0 animate__animated animate__fadeIn animate__delay-3s">
+      📄 View Resume
+    </a>
+      </div>
+</section>
+
+<!-- Elegant FadeIn Animations for Elements -->
+<style>
+  /* Smooth fade-in transition for text and button */
+  .animate__fadeIn {
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  /* Button hover effect */
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+</style>
+
+<!-- Typed.js script -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed-text", {
+    strings: [
+      "Aspiring Software Developer 💻",
+      "Machine Learning Enthusiast 🤖",
+      "Tech Explorer 🚀",
+      "Passionate Fresher 🎓"
+    ],
+    typeSpeed: 40,
+    backSpeed: 20,
+    loop: true
+  });
+</script>
+  
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 px-6 bg-white text-gray-800 zoom-in  ">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="text-center md:text-left">
+        <img src="images/photograph.png"
+             alt="My Profile Picture"
+             class="rounded-2xl shadow-xl w-72 h-72 mx-auto md:mx-0 object-contain transition-transform duration-500 hover:scale-110">
+      </div>
+      <div>
+        <h2 class="text-4xl font-bold text-blue-700 mb-4">About Me</h2>
+        <p class="text-lg leading-relaxed text-gray-600 mb-6">
+          Hello! I'm <span class="text-blue-600 font-semibold">Rashik Nagarajan</span> — a passionate, versatile, and energetic individual who’s always ready to learn, adapt, and contribute.
+          I'm a recent graduate with hands-on experience in <strong>Machine Learning, Web Development, and Data Analytics</strong>.
+        </p>
+        <p class="text-lg text-gray-600 mb-6">
+          I’ve worked on multiple projects including stock prediction apps, customer churn detection, and dynamic web apps using modern frameworks.
+          I enjoy turning ideas into real, working products — and I’m constantly exploring new tech tools and trends.
+        </p>
+        <p class="text-lg text-gray-600 mb-6">
+          💼 I’m currently open to <span class="text-blue-600 font-semibold">any exciting opportunity</span> — whether it’s in development, analytics, testing, design, or research.
+          My goal is to keep growing, contributing to meaningful work, and making an impact wherever I go.
+        </p>
+        <p class="text-lg text-gray-600 mb-6">
+          Let’s connect, collaborate, and build something amazing together! 🚀
+        </p>
+        <a href="docs/Rashik-Nagarajan-Resume.pdf"
+           download="Rashik_Nagarajan_Resume"
+           target="_blank"
+           class="inline-block bg-blue-600 text-white text-lg font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
+          Download Resume
+        </a>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Education Section -->
+  <h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Education</h2>
+  <section class="px-6 py-10 bg-gradient-to-r from-blue-100 via-white to-blue-100 text-gray-800 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300">
+    <div class="max-w-6xl mx-auto">
+      <!-- <h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Education</h2> -->
+  
+      <!-- First Row -->
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <!-- B.E. -->
+        <div class="p-6 rounded-xl shadow-lg bg-white hover:scale-105 transition-transform duration-500">
+          <h5 class="text-2xl font-bold text-yellow-700">Bachelor of Engineering (B.E)</h5>
+          <p class="text-lg text-gray-600"><strong>Institution:</strong> Muthayammal Engineering College</p>
+          <p class="text-lg text-gray-600"><strong>Duration:</strong> October 2020 - May 2024</p>
+          <p class="text-lg text-gray-600"><strong>Major:</strong> Computer Science and Engineering</p>
+          <p class="text-lg text-gray-600"><strong>CGPA:</strong> 8.89</p>
+        </div>
+  
+        <!-- 12th Grade -->
+        <div class="p-6 rounded-xl shadow-lg bg-white hover:scale-105 transition-transform duration-500">
+          <h5 class="text-2xl font-bold text-yellow-700">Higher Secondary School (12th Grade)</h5>
+          <p class="text-lg text-gray-600"><strong>Institution:</strong> SRV Boys Higher Secondary School</p>
+          <p class="text-lg text-gray-600"><strong>Duration:</strong> June 2018 - March 2020</p>
+          <p class="text-lg text-gray-600"><strong>Stream:</strong> Biology-Mathematics</p>
+          <p class="text-lg text-gray-600"><strong>Percentage:</strong> 74.5</p>
+        </div>
+      </div>
+  
+      <!-- Second Row: 10th Grade Centered -->
+      <div class="flex justify-center">
+        <div class="p-6 rounded-xl shadow-lg bg-white hover:scale-105 transition-transform duration-500 w-full md:w-1/2">
+          <h5 class="text-2xl font-bold text-yellow-700">Secondary School (10th Grade)</h5>
+          <p class="text-lg text-gray-600"><strong>Institution:</strong> SRV Boys Higher Secondary School</p>
+          <p class="text-lg text-gray-600"><strong>Duration:</strong> June 2017 - April 2018</p>
+          <p class="text-lg text-gray-600"><strong>Percentage:</strong> 92.2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
+<section id="projects" class="py-12 px-0 mx-0">
+
+  <h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Projects</h2>
+
+  <!-- Card 1 -->
+  <div class="bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:scale-95 transition-transform duration-300">
+    <h3 class="text-3xl font-bold text-blue-600 mb-3 hover:text-blue-800 transition duration-300">Detection of Cardiac Disease using Deep Learning</h3>
+    <span class="inline-block bg-green-200 text-green-800 text-sm px-4 py-2 rounded-full mb-6 font-semibold">✅ Completed</span>
+    <p class="text-gray-700 text-lg mb-6">
+      Automated ECG-based heart disease detection with feature extraction (Python, Signal Processing). Optimized classifiers for Myocardial Infarction and Abnormal Heartbeat detection using KNN, SVM, Logistic Regression, and Ensemble Methods.
+    </p>
+    <div class="mb-6">
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">Key Highlights</h4>
+      <ul class="list-disc pl-6 space-y-2">
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Implemented a comprehensive pipeline for ECG signal preprocessing and noise reduction, enhancing model accuracy.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Achieved over 90% accuracy in detecting heart disease from ECG data using a hybrid ensemble model.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Utilized deep learning techniques such as Convolutional Neural Networks (CNNs) for feature extraction from raw ECG signals.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Optimized model performance using cross-validation and hyperparameter tuning, reducing overfitting.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Deployed the solution to a cloud platform for real-time predictions, making the system accessible to healthcare professionals.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-green-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Contributed to a healthier community by providing an automated tool for early detection of heart disease, potentially saving lives.
+        </li>
+      </ul>
+    </div>
+    <a href="https://github.com/N-Rashik/ecg-analyzer-streamlit" target="_blank" class="text-blue-500 font-medium hover:underline">View GitHub Repo</a>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-gradient-to-r from-yellow-100 via-white to-yellow-100 p-8 rounded-xl shadow-lg hover:shadow-2xl mt-10 hover:scale-95 transition-transform duration-300">
+    <h3 class="text-3xl font-bold text-yellow-600 mb-3 hover:text-yellow-800 transition duration-300">MediGuide: AI-Powered Disease Prediction and Personalized Health Assistant</h3>
+    <span class="inline-block bg-yellow-200 text-yellow-800 text-sm px-4 py-2 rounded-full mb-6 font-semibold">🔧 Partially Completed</span>
+    <p class="text-gray-700 text-lg mb-6">
+      AI-powered disease prediction using user health data, providing personalized treatment suggestions. Integrated machine learning models for disease diagnosis and dynamic health tracking for users (Python, Streamlit).
+    </p>
+    <div class="mb-6">
+      <h4 class="text-lg font-semibold text-gray-800 mb-2">Key Highlights</h4>
+      <ul class="list-disc pl-6 space-y-2">
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-yellow-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Developed a prediction model using Random Forest Classifier for accurate disease diagnosis based on health data.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-yellow-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Integrated real-time data input via Streamlit for interactive predictions and personalized recommendations.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-yellow-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          Optimized user interface for intuitive experience and clear presentation of health diagnostics and suggestions.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-yellow-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          <span class="font-semibold text-yellow-600">In Progress:</span> Working on enhancing the model accuracy with more health conditions and incorporating a personalized treatment plan based on user input.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-yellow-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          <span class="font-semibold text-yellow-600">Future Work:</span> Planning to integrate dynamic health tracking to monitor ongoing conditions and provide continuous recommendations to users.
+        </li>
+        <li class="flex items-center text-gray-700">
+          <svg class="w-5 h-5 text-yellow-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10"></path></svg> 
+          <span class="font-semibold text-yellow-600">Goal:</span> Extend the app to offer real-time feedback and suggestions, improving health outcomes and supporting healthcare professionals.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<!-- <div class="bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg"> -->
+  <!-- Programming Languages Card -->
+  <h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Skills and Tools</h2>
+
+  <div class="mb-8 p-8 bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300">
+    <h2 class="text-4xl font-bold text-blue-700 text-center mb-8">Programming Languages</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/python.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Python</h5>
+          <p class="text-sm text-gray-600">General-purpose language ideal for data science and automation.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Core Java</h5>
+          <p class="text-sm text-gray-600">Strongly typed OOP language used in enterprise applications.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/ios-filled/50/000000/sql.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">SQL</h5>
+          <p class="text-sm text-gray-600">Used for querying and managing relational databases.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Development Card -->
+  <div class="mb-8 p-8 bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300">
+    <h2 class="text-4xl font-bold text-blue-700 text-center mb-8">Web Development</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/html-5--v1.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">HTML</h5>
+          <p class="text-sm text-gray-600">Structures content for websites and web apps.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/css3.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">CSS</h5>
+          <p class="text-sm text-gray-600">Styles HTML elements for appealing UI designs.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/javascript--v1.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">JavaScript</h5>
+          <p class="text-sm text-gray-600">Adds interactivity and logic to frontend apps.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Machine Learning & Data Science Card -->
+  <div class="mb-8 p-8 bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300">
+    <h2 class="text-4xl font-bold text-blue-700 text-center mb-8">Machine Learning & Data Science</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Machine Learning</h5>
+          <p class="text-sm text-gray-600">Supervised and unsupervised ML models for data prediction.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149640.png" alt="Deep Learning Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Deep Learning & AI</h5>
+          <p class="text-sm text-gray-600">AI models using neural networks for smarter systems.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/time-machine.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Time Series Analysis</h5>
+          <p class="text-sm text-gray-600">Forecasting using temporal and historical data trends.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Libraries & Frameworks Card -->
+  <div class="mb-8 p-8 bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300">
+    <h2 class="text-4xl font-bold text-blue-700 text-center mb-8">Libraries & Frameworks</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/numpy.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">NumPy</h5>
+          <p class="text-sm text-gray-600">Efficient numerical computations and array operations.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/pandas.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Pandas</h5>
+          <p class="text-sm text-gray-600">Data manipulation and analysis using DataFrames.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit-learn Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">scikit-learn</h5>
+          <p class="text-sm text-gray-600">A powerful Python library for classical machine learning algorithms.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn Logo" class="w-10 h-15" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Seaborn</h5>
+          <p class="text-sm text-gray-600">Statistical data visualization built on top of Matplotlib for beautiful plots with less code.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/tensorflow.png" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">TensorFlow</h5>
+          <p class="text-sm text-gray-600">An open-source machine learning framework for building models.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Matplotlib</h5>
+          <p class="text-sm text-gray-600">Comprehensive library for static, animated, and interactive visualizations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools & Platforms Card -->
+  <div class="mb-8 p-8 bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300">
+    <h2 class="text-4xl font-bold text-blue-700 text-center mb-8">Tools & Platforms</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/fluency/48/jupyter.png" alt="Jupyter Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Jupyter Notebook</h5>
+          <p class="text-sm text-gray-600">An open-source web-based interactive computing environment for creating Jupyter notebooks.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://img.icons8.com/color/48/streamlit.png" alt="Streamlit Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Streamlit</h5>
+          <p class="text-sm text-gray-600">An open-source framework for building interactive data science and machine learning web apps.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Google Colab Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">Google Colab</h5>
+          <p class="text-sm text-gray-600">A free cloud-based Jupyter notebook environment for Python programming, especially for machine learning.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">GitHub</h5>
+          <p class="text-sm text-gray-600">A platform for version control and collaboration, allowing developers to share code repositories.</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="w-10 h-10" />
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800">AWS</h5>
+          <p class="text-sm text-gray-600">Amazon Web Services provides cloud computing platforms for computing power, storage, and machine learning tools.</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Internships</h2>
+<div class="mb-8 p-8 bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg hover:scale-95 transition-transform duration-300 transform origin-center overflow-hidden">
+  <div class="mb-8">
+    <div class="mt-4">
+      <!-- <h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Internships</h2> -->
+      <div class="mb-6">
+        <h5 class="text-2xl font-bold text-blue-700">Gradtwin Services (OPC) Private Limited</h5>
+        <p class="text-lg text-gray-600"><strong>Role:</strong> Machine Learning Intern</p>
+        <p class="text-lg text-gray-600"><strong>Duration:</strong> August 2024 - December 2024</p>
+        <p class="text-lg text-gray-600 mt-2"><strong>Description:</strong></p>
+        <ul class="list-none pl-1 text-lg text-gray-600 leading-relaxed mt-2">
+          <li class="flex items-start mb-2">
+            <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+            </svg>
+            <span>Implemented machine learning models (Logistic Regression, Random Forest, SVM) with hyperparameter tuning and feature engineering.</span>
+          </li>
+          <li class="flex items-start mb-2">
+            <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+            </svg>
+            <span>Optimized models using performance metrics like accuracy, F1-score, and ROC-AUC, and used cross-validation for overfitting prevention.</span>
+          </li>
+          <li class="flex items-start">
+            <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+            </svg>
+            <span>Utilized Python (pandas, NumPy, scikit-learn) for data preprocessing and model evaluation.</span>
+          </li>
+        </ul>
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/1JHafhE-btaXQOQQ7pZyCvW1lVk71B6la/view?usp=sharing" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+            View Certificate
+          </a>
+          <a href="https://drive.google.com/uc?export=download&id=1JHafhE-btaXQOQQ7pZyCvW1lVk71B6la" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+            Download Certificate
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mb-6">
+      <h5 class="text-2xl font-bold text-blue-700">CodSoft</h5>
+      <p class="text-lg text-gray-600"><strong>Role:</strong> Machine Learning Intern</p>
+      <p class="text-lg text-gray-600"><strong>Duration:</strong> August 2023 - August 2023</p>
+      <p class="text-lg text-gray-600 mt-2"><strong>Description:</strong></p>
+      <ul class="list-none pl-1 text-lg text-gray-600 leading-relaxed mt-2">
+        <li class="flex items-start mb-2">
+          <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+          </svg>
+          <span>Developed and deployed ML models for Customer Churn Prediction, SMS Spam Detection, and Credit Card Fraud Prevention.</span>
+        </li>
+        <li class="flex items-start">
+          <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+          </svg>
+          <span>Applied data preprocessing techniques and feature selection for better accuracy in predictive models.</span>
+        </li>
+      </ul>
+      <div class="mt-4 flex gap-4">
+        <a href="https://drive.google.com/file/d/1XodB713js7eatp3ORrGATIRSQ_UUDeOU/view?usp=sharing" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          View Certificate
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1XodB713js7eatp3ORrGATIRSQ_UUDeOU" download class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          Download Certificate
+        </a>
+      </div>
+    </div>
+    <div class="mb-6">
+      <h5 class="text-2xl font-bold text-blue-700">BoltIot</h5>
+      <p class="text-lg text-gray-600"><strong>Role:</strong> Intern</p>
+      <p class="text-lg text-gray-600"><strong>Duration:</strong> June 2023 - August 2023</p>
+      <p class="text-lg text-gray-600 mt-2"><strong>Description:</strong></p>
+      <ul class="list-none pl-1 text-lg text-gray-600 leading-relaxed mt-2">
+        <li class="flex items-start">
+          <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+          </svg>
+          <span>Worked on building and deploying interactive web applications using front-end and back-end technologies.</span>
+        </li>
+      </ul>
+      <div class="mt-4 flex gap-4">
+        <a href="https://drive.google.com/file/d/1cUeZuFwCFjGLQCHhDJJKCasHvlXQMxvv/view?usp=sharing" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          View Certificate
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1cUeZuFwCFjGLQCHhDJJKCasHvlXQMxvv" download class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          Download Certificate
+        </a>
+      </div>
+    </div>
+    <div class="mb-6">
+      <h5 class="text-2xl font-bold text-blue-700">Marcello Tech</h5>
+      <p class="text-lg text-gray-600"><strong>Role:</strong> Intern</p>
+      <p class="text-lg text-gray-600 mt-2"><strong>Description:</strong></p>
+      <ul class="list-none pl-1 text-lg text-gray-600 leading-relaxed mt-2">
+        <li class="flex items-start">
+          <svg class="w-5 h-5 text-green-600 mr-2 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12l5 5l10-10" />
+          </svg>
+          <span>Contributed to project documentation and wrote codes for automating daily tasks.</span>
+        </li>
+      </ul>
+      <div class="mt-4 flex gap-4">
+        <a href="https://drive.google.com/file/d/1IlRuazqgJY6tiwqYNB_ZD5BGxnaQURQ2/view?usp=sharing" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+          View Certificate
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1IlRuazqgJY6tiwqYNB_ZD5BGxnaQURQ2" download class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+          Download Certificate
+        </a>
+      </div>
+    </class>
+    </div>
+  </div>
+</div>
+<h2 class="text-4xl font-bold text-blue-700 mb-8 text-center">Certifications</h2>
+<div class="bg-gradient-to-r from-blue-100 via-white to-blue-100 p-8 rounded-xl shadow-lg mt-8 hover:scale-95 transition-transform duration-300">
+  <!-- <h4 class="text-3xl font-semibold text-blue-600 mb-6">Certifications</h4> -->
+  <div class="flex flex-wrap gap-8">
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-blue-700">Full Stack Development Certificate</h5>
+      <p class="text-lg text-gray-600"><strong>Issued by:</strong> WIPRO</p>
+      <p class="text-lg text-gray-600"><strong>Date:</strong> May 2023 - September 2023</p>
+            <div class="mt-4">
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/12lBg1phkUVVFuz19gIITczX5DNsSprk-/view?usp=sharing" target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Certificate</a>
+          <a href="https://drive.google.com/uc?export=download&id=12lBg1phkUVVFuz19gIITczX5DNsSprk" download
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Download Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-blue-700">RPA FOUNDATION</h5>
+      <p class="text-lg text-gray-600"><strong>Issued by:</strong> WIPRO</p>
+      <p class="text-lg text-gray-600"><strong>Date:</strong> April 2024</p>
+        <div class="mt-4">
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/1QSWSjKwnvGPUuLuWfp4fiCbFQrSo9Kjz/view?usp=sharing" target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Certificate</a>
+          <a href="https://drive.google.com/uc?export=download&id=1QSWSjKwnvGPUuLuWfp4fiCbFQrSo9Kjz" download
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Download Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-blue-700">CLOUD COMPUTING FOUNDATION</h5>
+      <p class="text-lg text-gray-600"><strong>Issued by:</strong> WIPRO</p>
+      <p class="text-lg text-gray-600"><strong>Date:</strong> April 2024</p>
+        <div class="mt-4">
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/1kwpNVfSIgARydwsVxdRVg18SA_YGlRUr/view?usp=sharing" target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Certificate</a>
+          <a href="https://drive.google.com/uc?export=download&id=1kwpNVfSIgARydwsVxdRVg18SA_YGlRUr" download
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Download Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-blue-700">CISCO IOT FOUNDATION</h5>
+      <p class="text-lg text-gray-600"><strong>Issued by:</strong> WIPRO</p>
+      <p class="text-lg text-gray-600"><strong>Date:</strong> April 2024</p>
+        <div class="mt-4">
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/1XgzyA3jaJZxMqF8uShbr593U6wVTzqcl/view?usp=sharing" target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Certificate</a>
+          <a href="https://drive.google.com/uc?export=download&id=1XgzyA3jaJZxMqF8uShbr593U6wVTzqcl" download
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Download Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-blue-700">ARTIFICIAL INTELLIGENCE FOUNDATION</h5>
+      <p class="text-lg text-gray-600"><strong>Issued by:</strong> WIPRO</p>
+      <p class="text-lg text-gray-600"><strong>Date:</strong> April 2024</p>
+        <div class="mt-4">
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/13b38FQRpEGdYiZqMpvzuxfCLMPD7iqeP/view?usp=sharing" target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Certificate</a>
+          <a href="https://drive.google.com/uc?export=download&id=13b38FQRpEGdYiZqMpvzuxfCLMPD7iqeP" download
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Download Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-blue-700">CISCO CYBER SECURITY</h5>
+      <p class="text-lg text-gray-600"><strong>Issued by:</strong> WIPRO</p>
+      <p class="text-lg text-gray-600"><strong>Date:</strong> April 2024</p>
+        <div class="mt-4">
+        <div class="mt-4 flex gap-4">
+          <a href="https://drive.google.com/file/d/1iUMZnTzoLrE_y_BlDQs_Thv0S1nhmz_E/view?usp=sharing" target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">View Certificate</a>
+          <a href="https://drive.google.com/uc?export=download&id=1iUMZnTzoLrE_y_BlDQs_Thv0S1nhmz_E" download
+            class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Download Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-gradient-to-r from-teal-100 via-white to-teal-100 p-8 rounded-xl shadow-lg mt-8">
+  <h4 class="text-3xl font-semibold text-teal-600 mb-6">Contact</h4>
+  <div class="flex flex-wrap gap-4">
+    <div class="flex-1 min-w-[48%]">
+      <h5 class="text-2xl font-bold text-teal-700 mb-4">Get in Touch</h5>
+      <p class="text-lg text-gray-600"><strong>Email:</strong> <a href="mailto:your-email@example.com" class="text-teal-600">nrashik2003@gmail.com</a></p>
+      <p class="text-lg text-gray-600"><strong>Phone:</strong> +91 9500786126</p>
+      <p class="text-lg text-gray-600"><strong>Location:</strong> Rasipuram , Namakkal</p>
+      <p class="text-lg text-gray-600">
+        <div class="flex gap-6 mt-4">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/rashik-nagarajan/" target="_blank" class="text-teal-600 text-2xl hover:text-teal-800 transition" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        
+          <!-- GitHub -->
+          <a href="https://github.com/N-Rashik" target="_blank" class="text-teal-600 text-2xl hover:text-teal-800 transition" aria-label="GitHub Profile">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        
+      
+       </div>
+       <!-- <div class="flex-1 min-w-[48%]">
+        <h5 class="text-2xl font-bold text-teal-700 mb-4">Send a Message</h5> -->
+        
+        <!-- Include Font Awesome in <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Contact Form -->
+<div class="flex-1 min-w-[48%]">
+  <!-- <div div class="flex flex-wrap gap-4"> -->
+  <h5 class="text-2xl font-bold text-teal-700 mb-4">Send a Message</h5>
+
+  <form id="contact-form" class="space-y-4">
+    <!-- Hidden Fields for FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_autoresponse" value="Thanks for reaching out!">
+
+    <div class="flex flex-col">
+      <label for="name" class="text-lg text-gray-600">Your Name</label>
+      <input type="text" id="name" name="name" required class="p-2 border border-gray-300 rounded-md" />
+    </div>
+    <div class="flex flex-col">
+      <label for="email" class="text-lg text-gray-600">Your Email</label>
+      <input type="email" id="email" name="email" required class="p-2 border border-gray-300 rounded-md" />
+    </div>
+    <div class="flex flex-col">
+      <label for="message" class="text-lg text-gray-600">Your Message</label>
+      <textarea id="message" name="message" required rows="4" class="p-2 border border-gray-300 rounded-md"></textarea>
+    </div>
+
+    <button type="submit" class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700 transition">
+      Send Message
+    </button>
+
+    <!-- Thank You Message -->
+    <p id="thank-you-msg" class="hidden text-green-600 mt-4 text-lg">✅ Thank you! Your message has been sent.</p>
+  </form>
+</div>
+
+
+  
+      
+</div>
+</div>
+</div>
+<script>
+  const form = document.getElementById('contact-form');
+  const thankYouMsg = document.getElementById('thank-you-msg');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Stop the page from redirecting
+
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/nrashik2003@gmail.com", {
+      method: "POST",
+      body: formData,
+    })
+    .then(response => {
+      if (response.ok) {
+        thankYouMsg.textContent = "✅ Thank you! Your message has been sent.";
+        thankYouMsg.classList.remove("hidden");
+        form.reset(); // Clear form fields
+      } else {
+        thankYouMsg.textContent = "❌ Oops! Something went wrong.";
+        thankYouMsg.classList.remove("hidden");
+        thankYouMsg.classList.replace("text-green-600", "text-red-600");
+      }
+    })
+    .catch(error => {
+      thankYouMsg.textContent = "❌ Could not send. Please try again later.";
+      thankYouMsg.classList.remove("hidden");
+      thankYouMsg.classList.replace("text-green-600", "text-red-600");
+    });
+  });
+</script>
+
+</body>
+</html>
